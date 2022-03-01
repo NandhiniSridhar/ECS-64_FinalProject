@@ -1,36 +1,41 @@
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
     <body>
         <div id="title">
             <h1>Class Match</h1>
             <p>Short description here</p>
         </div>
-        <div id="prev_school">
-            <h3>I have previously attended:</h3>
-            <form action="#">
-                <select name="schools" id="school_names">
-                    <option value="default">Select A School</option>
-                    <option value="option1">School 1</option>
-                    <option value="option2">School 2</option>
-                    <option value="option3">School 3</option>
-                    <option value="option4">School 4</option>
-                </select>
-            </form>
+        <div class ="flex_container">
+            <div id="prev_school" class="flex_col_left">
 
-            
-        </div>
+                <h3>I have previously attended:</h3>
+                <form action="#">
+                    <select name="schools" id="school_names">
+                        <option value="default">Select A School</option>
+                        <option value="option1">School 1</option>
+                        <option value="option2">School 2</option>
+                        <option value="option3">School 3</option>
+                        <option value="option4">School 4</option>
+                    </select>
+                </form>
 
-        <div id="transfer_school">
-            <h3>I want to transfer to:</h3>
-            <form action="#">
-                <select name="schools" id="transfer_schoool_names">
-                    <option value="default">Select A School</option>
-                    <option value="option1">School 1</option>
-                    <option value="option2">School 2</option>
-                    <option value="option3">School 3</option>
-                    <option value="option4">School 4</option>
-                </select>
-            </form> 
-        </div>
+
+            </div> <!-- end flex col left-->
+
+            <div id="transfer_school" class="flex_col_right">
+                <h3>I want to transfer to:</h3>
+                <form action="#">
+                    <select name="schools" id="transfer_schoool_names">
+                        <option value="default">Select A School</option>
+                        <option value="option1">School 1</option>
+                        <option value="option2">School 2</option>
+                        <option value="option3">School 3</option>
+                        <option value="option4">School 4</option>
+                    </select>
+                </form> 
+            </div>  <!-- end flex col right-->
+        </div>  <!-- end flex container-->
     </body>
 </html>
