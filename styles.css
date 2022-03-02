@@ -1,6 +1,55 @@
-.body {
+nav{
+    margin-top: 2vw;
+    margin-bottom: 5%;
+    padding-bottom: 5vh;
+}
+
+#nav_menu{
+    float:right;
+    margin-right: 3vw;
+    margin-top: 1.5vw;
+}
+
+#nav_icon{
+    float: left;
+    display: inline;
+    margin-left: 4.5vw;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    margin:0;
+    /*padding;*/
+    overflow:hidden;
+    text-align: right;
+}
+
+nav li{
+    float: left;
+    font-family: "HelveticaNeue", "Arial", sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    height: 2em;
+    padding: 1vw;
+    
+}
+nav a{
+    text-decoration: none;
+    color: #606060;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav a:active, a:hover{
+    color: #7BBBFF;
+}
+
+body {
     padding: 0;
-    margin: 0;
+    margin-left: 5%;
+    margin-right:5%;
 }
 
 .flex_container {
@@ -43,6 +92,7 @@
 
 .units {
     display: block;
+    
 }
 
 .internal_right {
