@@ -1,5 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <h1>Login</h1>
-    <button onClick="location.href='logged_in_view.html'" type="button">Login</button>
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+
+    <nav>
+        <a href = index.html id = "nav_icon"> <img src ="./assist_logo.png" width="120px" height="90px"> </a>
+        
+        <ul id = "nav_menu">
+            <li>John Doe</li> <!-- need to make this a dropdown menu to display other schedules-->
+            
+        </ul>
+        <br/>
+    </nav>
+
+    <div class ="flex_container">
+        <div id="login" class="flex_col_left">
+            <h1>log in</h1>
+            <p>Username</p>
+            <input type="text"/>  
+            <p>Password</p>
+            <input type="password"/> <br/> <br/>
+            <button onClick="location.href='logged_in_view.html'" type="button">Login</button>
+        </div> <!-- end flex col left-->
+
+        <div id="signup" class="flex_col_right">
+            <h1>sign up</h1>
+            <p>First Name</p>
+            <input type="text"/>  
+            <p>Last Name</p>
+            <input type="test"/> 
+            <p>Email</p>
+            <input type="email"/>  
+            <p>Password</p>
+            <input type="password"/>
+            <p>Confirm</p>
+            <input type="password"/>
+            <br/> <br/>
+            <button onClick="location.href='logged_in_view.html'" type="button">Sign Up</button>
+        </div>  <!-- end flex col right-->
+    </div>  <!-- end flex container-->
+
 </html>
