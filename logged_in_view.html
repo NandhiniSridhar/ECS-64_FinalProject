@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>John's Schedules</title>
         <link rel="stylesheet" href="styles.css"/>
+        <script src="index.js"></script>
     </head>
 
     <nav>
         <a href = index.html id = "nav_icon"> <img src ="./assist_logo.png" width="142px" height="72px"> </a>
         
         <ul id = "nav_menu">
-            <li>John Doe</li> <!-- need to make this a dropdown menu to display other schedules-->
+            <li>John Doe</li>
             
         </ul>
         <br/>
@@ -17,14 +19,15 @@
     <div> <br> </div>
     <header>
         <h1>John's Schedule 1</h1>
+        
         <br/>
     </header>
 
     <body>
         
         <div class ="flex_container">
-            <div id="prev_school" class="flex_col_left">
-
+            <div id="cc" class="flex_col_left">
+                    
                 <h3>I have previously attended:</h3>
                 <form action="#">
                     <select name="schools" id="school_names">
@@ -38,10 +41,10 @@
                 </form>
                 
                 <div class="internal_flex_container">
-                    <div class="internal_left">
+                    <div id= "cc_left" class="internal_left">
                         <h3>My classes: </h3>
                         <form action="#">
-                            <select name="courses_cc" id="courses_cc">
+                            <select name="courses_cc" class="courses_cc">
                                 <option value="default">Select A Class</option>
                                 <option value="option1">Class 1</option>
                                 <option value="option2">Class 2</option>
@@ -51,7 +54,7 @@
                             <br/>
                         </form>
                         <form action="#">
-                            <select name="courses_cc" id="courses_cc">
+                            <select name="courses_cc" class="courses_cc">
                                 <option value="default">Select A Class</option>
                                 <option value="option1">Class 1</option>
                                 <option value="option2">Class 2</option>
@@ -62,7 +65,7 @@
                             
                         </form>
                         <form action="#">
-                            <select name="courses_cc" id="courses_cc">
+                            <select name="courses_cc" class="courses_cc">
                                 <option value="default">Select A Class</option>
                                 <option value="option1">Class 1</option>
                                 <option value="option2">Class 2</option>
@@ -70,9 +73,9 @@
                                 <option value="option4">Class 4</option>
                                 
                             </select>
-                        </form>
+                        </form> 
                         <form action="#">
-                            <select name="courses_cc" id="courses_cc">
+                            <select name="courses_cc" class="courses_cc">
                                 <option value="default">Select A Class</option>
                                 <option value="option1">Class 1</option>
                                 <option value="option2">Class 2</option>
@@ -81,6 +84,10 @@
                                 
                             </select>
                         </form>
+                        <div id="new_forms"></div>
+
+                        <br/> <br/> <br/> <br/>    
+                        <button id="home_add" onclick="addRow()">Add Class</button>
                     </div>
                     
                     <div class="internal_right">
@@ -89,9 +96,10 @@
                         <input class="units" type="text"/><br/>
                         <input class="units" type="text"/><br/>
                         <input class="units" type="text"/><br/>
+                        <div id="new_units"></div>
                     </div>    
-                </div>    
-
+                </div>
+                
             </div> <!-- end flex col left-->
 
             <div id="transfer_school" class="flex_col_right">
@@ -107,59 +115,17 @@
                 </form>
                 
                 <div class="internal_flex_container">
-                    <div class="internal_left">
+                    <div id="uni_courses" class="internal_left">
                         <h3>My classes: </h3>
-                        <form action="#">
-                            <select name="courses_cc" id="courses_cc">
-                                <option value="default">Select A Class</option>
-                                <option value="option1">Class 1</option>
-                                <option value="option2">Class 2</option>
-                                <option value="option3">Class 3</option>
-                                <option value="option4">Class 4</option>
-                            </select>
-                            <br/>
-                        </form>
-                        <form action="#">
-                            <select name="courses_cc" id="courses_cc">
-                                <option value="default">Select A Class</option>
-                                <option value="option1">Class 1</option>
-                                <option value="option2">Class 2</option>
-                                <option value="option3">Class 3</option>
-                                <option value="option4">Class 4</option>
-                                
-                            </select>
-                            
-                        </form>
-                        <form action="#">
-                            <select name="courses_cc" id="courses_cc">
-                                <option value="default">Select A Class</option>
-                                <option value="option1">Class 1</option>
-                                <option value="option2">Class 2</option>
-                                <option value="option3">Class 3</option>
-                                <option value="option4">Class 4</option>
-                                
-                            </select>
-                        </form>
-                        <form action="#">
-                            <select name="courses_cc" id="courses_cc">
-                                <option value="default">Select A Class</option>
-                                <option value="option1">Class 1</option>
-                                <option value="option2">Class 2</option>
-                                <option value="option3">Class 3</option>
-                                <option value="option4">Class 4</option>
-                                
-                            </select>
-                        </form>
+                        <p>Class <br/>Class<br/>Class <br/>Class</p>
                     </div>
-                    
-                    <div class="internal_right">
+                    <div id="uni_units" class="internal_right">
                         <h3>Units</h3>
-                        <input class="units" type="text"/><br/>
-                        <input class="units" type="text"/><br/>
-                        <input class="units" type="text"/><br/>
-                        <input class="units" type="text"/><br/>
+                        <p>4 <br/>4<br/>2 <br/>3</p>
                     </div>    
             </div>  <!-- end flex col right-->
         </div>  <!-- end flex container-->
+
+        
     </body>
 </html>
