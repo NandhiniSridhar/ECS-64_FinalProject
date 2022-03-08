@@ -25,11 +25,15 @@ function addRow(){
     //add selections to form
     new_form.appendChild(new_select);
     document.getElementById("new_forms").appendChild(new_form); //add forms to left side
+    document.getElementById("new_forms").appendChild(document.createElement("br"));
 
+    //adding textbox for units on left side
     let new_input = document.createElement("input");
     new_input.setAttribute("class", "units");
     new_input.setAttribute("type", "text");
     document.getElementById("new_units").appendChild(new_input);
+    document.getElementById("new_units").appendChild(document.createElement("br"));
+
 
     //adding equivalent classes to right side (4 year school)
     let new_equiv = document.createElement("p");
