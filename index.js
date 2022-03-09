@@ -38,11 +38,16 @@ function addRow(){
     //adding equivalent classes to right side (4 year school)
     let new_equiv = document.createElement("p");
     new_equiv.innerHTML = "New Class";
+    new_equiv.setAttribute("class", "long_lineheight");
     document.getElementById("uni_courses").appendChild(new_equiv);
+    //document.getElementById("uni_courses").appendChild(document.createElement("br"));
 
     let new_units = document.createElement("p")
     new_units.innerHTML = Math.ceil(Math.random() * 5);
+    new_units.setAttribute("class", "long_lineheight");
     document.getElementById("uni_units").appendChild(new_units);
+    //document.getElementById("uni_units").appendChild(document.createElement("br"));
+
 
 }
 

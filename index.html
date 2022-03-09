@@ -8,7 +8,6 @@
 
     <nav>
         <a href = index.html id = "nav_icon"> <img src ="./assist_logo.png" width="142px" height="72px"> </a>
-        
         <ul id = "nav_menu">
             <li><a href = login_page.html>Login</a></li>
             
@@ -19,8 +18,8 @@
     <div> <br> </div>
     <header>
         <h1>Class Match</h1>
-        <p>Short description here</p>
-        <br/>
+        <p>The Offical Course Transfer and Articulation System for California's public collges and universities</p>
+        <br/><br/>
     </header>
 
     <body>
@@ -28,7 +27,7 @@
         <div class ="flex_container">
             <div id="cc" class="flex_col_left">
                     
-                <h3>I have previously attended:</h3>
+                <h2>I have previously attended:</h2>
                 <form action="#">
                     <select name="schools" id="school_names">
                         <option value="default">Select A School</option>
@@ -93,6 +92,7 @@
 
                         <br/> <br/> <br/> <br/>    
                         <button id="home_add" onclick="addRow()">Add Class</button>
+                        <button id="save" onclick="location.href='login_page.html'">Save Schedule</button>
                     </div>
                     
                     <div class="internal_right">
@@ -110,7 +110,7 @@
             </div> <!-- end flex col left-->
 
             <div id="transfer_school" class="flex_col_right">
-                <h3>I want to transfer to:</h3>
+                <h2>I want to transfer to:</h2>
                 <form action="#">
                     <select name="schools" id="transfer_schoool_names">
                         <option value="default">Select A School</option>
@@ -122,13 +122,19 @@
                 </form>
                 
                 <div class="internal_flex_container">
-                    <div id="uni_courses" class="internal_left">
+                    <div id="uni_courses" class="internal_left" class="units">
                         <h3>My classes: </h3>
-                        <p>Class <br/>Class<br/>Class <br/>Class</p>
+                        <p class="long_lineheight">Class</p>
+                        <p class="long_lineheight">Class</p>
+                        <p class="long_lineheight">Class</p>
+                        <p class="long_lineheight">Class</p>
                     </div> <!-- end internal left-->
                     <div id="uni_units" class="internal_right">
                         <h3>Units</h3>
-                        <p>4 <br/>4<br/>2 <br/>3</p>     
+                        <p class="long_lineheight">4</p>
+                        <p class="long_lineheight">2</p>
+                        <p class="long_lineheight">3</p>
+                        <p class="long_lineheight">4</p>     
                     </div>  <!-- end internal right-->
     
                     

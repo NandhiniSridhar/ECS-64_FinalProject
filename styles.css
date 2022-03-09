@@ -1,4 +1,7 @@
 
+h1{
+    font-size: 72px;
+}
 nav{
     margin-top: 2vw;
     margin-bottom: 5%;
@@ -55,7 +58,6 @@ body {
 }
 
 .flex_container {
-    background-color: #7BBBFF;
     display: flex;
     flex-direction: row;
     height:calc(100%);
@@ -94,8 +96,7 @@ body {
 }
 
 .units {
-    display: block;
-    
+    display: block; 
 }
 
 .internal_right {
@@ -103,3 +104,6 @@ body {
     color: black;
     height: 100vh;
 }
+ .long_lineheight{
+     line-height: 25px;
+ }

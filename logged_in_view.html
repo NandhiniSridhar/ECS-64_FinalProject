@@ -30,7 +30,7 @@
         <div class ="flex_container">
             <div id="cc" class="flex_col_left">
                     
-                <h3>I have previously attended:</h3>
+                <h2>I have previously attended:</h2>
                 <form action="#">
                     <select name="schools" id="school_names">
                         <option value="default">Select A School</option>
@@ -55,6 +55,7 @@
                             </select>
                             <br/>
                         </form>
+                        <br/>
                         <form action="#">
                             <select name="courses_cc" class="courses_cc">
                                 <option value="default">Select A Class</option>
@@ -63,9 +64,10 @@
                                 <option value="option3">Class 3</option>
                                 <option value="option4">Class 4</option>
                                 
-                            </select>
-                            
+                            </select>    
                         </form>
+                        <br/>
+
                         <form action="#">
                             <select name="courses_cc" class="courses_cc">
                                 <option value="default">Select A Class</option>
@@ -76,6 +78,8 @@
                                 
                             </select>
                         </form> 
+                        <br/>
+
                         <form action="#">
                             <select name="courses_cc" class="courses_cc">
                                 <option value="default">Select A Class</option>
@@ -83,10 +87,11 @@
                                 <option value="option2">Class 2</option>
                                 <option value="option3">Class 3</option>
                                 <option value="option4">Class 4</option>
-                                
                             </select>
                         </form>
-                        <div id="new_forms"></div>
+                        <br/>
+
+                        <div id="new_forms"></div> <!-- where things get added-->
 
                         <br/> <br/> <br/> <br/>    
                         <button id="home_add" onclick="addRow()">Add Class</button>
@@ -99,6 +104,8 @@
                         <input class="units" type="text"/><br/>
                         <input class="units" type="text"/><br/>
                         <input class="units" type="text"/><br/>
+                        
+
                         <div id="new_units"></div>
                     </div>    
                 </div>
@@ -106,7 +113,7 @@
             </div> <!-- end flex col left-->
 
             <div id="transfer_school" class="flex_col_right">
-                <h3>I want to transfer to:</h3>
+                <h2>I want to transfer to:</h2>
                 <form action="#">
                     <select name="schools" id="transfer_schoool_names">
                         <option value="default">Select A School</option>
@@ -118,16 +125,27 @@
                 </form>
                 
                 <div class="internal_flex_container">
-                    <div id="uni_courses" class="internal_left">
+                    <div id="uni_courses" class="internal_left" class="units">
                         <h3>My classes: </h3>
-                        <p>Class <br/>Class<br/>Class <br/>Class</p>
-                    </div>
+                        <p class="long_lineheight">Class</p>
+                        <p class="long_lineheight">Class</p>
+                        <p class="long_lineheight">Class</p>
+                        <p class="long_lineheight">Class</p>
+                    </div> <!-- end internal left-->
                     <div id="uni_units" class="internal_right">
                         <h3>Units</h3>
-                        <p>4 <br/>4<br/>2 <br/>3</p>
-                    </div>    
+                        <p class="long_lineheight">4</p>
+                        <p class="long_lineheight">2</p>
+                        <p class="long_lineheight">3</p>
+                        <p class="long_lineheight">4</p>     
+                    </div>  <!-- end internal right-->
+    
+                    
             </div>  <!-- end flex col right-->
+            
         </div>  <!-- end flex container-->
+        
+       
 
         
     </body>
