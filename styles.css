@@ -44,11 +44,18 @@
     position:fixed;
     bottom:0px;
     right: 25%;
-    background-color:#7BBBFF;
-  
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(235, 235, 235, 0.637);
+    
 }
 
-
+#chatbot_btn{
+    color:white;
+    background-color: #7879f1;
+    height: 30px;
+    font-size: 16px;
+}
 
 .chatbot_text{
     position: relative;
@@ -137,6 +144,10 @@ nav a:active, a:hover{
 .dropdown:hover .dropdown_content {
     display:block;
 }
+.dropdown_content:hover{
+    /*background-color: #dadada;
+    try to make each link a dropdown item class and add background color to that class*/
+}
 
 body {
     font-family: "HelveticaNeue", "Arial", sans-serif;
@@ -195,3 +206,12 @@ body {
  .long_lineheight{
      line-height: 25px;
  }
+
+form{
+    box-sizing: border-box;
+}
+button{
+    border:none;
+    border-radius: 5px;
+    background-color:#dadada
+}

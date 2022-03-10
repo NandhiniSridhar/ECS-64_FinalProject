@@ -51,6 +51,10 @@ function addRow(){
 
 }
 
+function saveSchedule(){
+    alert("Schedule Saved");
+}
+
 function revealChatbot(){
     chatbot = document.getElementById("chatbot");
     //chatbot.setAttribute("visibility", "visible");
