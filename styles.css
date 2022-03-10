@@ -81,6 +81,8 @@ a{
 h1{
     font-size: 72px;
 }
+
+
 nav{
     margin-top: 2vw;
     margin-bottom: 5%;
@@ -126,7 +128,7 @@ nav a{
 }
 
 nav a:active, a:hover{
-    color: #7BBBFF;
+    color: #7879f1;
 }
 
 /*in logged in views/ my schedule, chat, etc - dropdown in nav*/
@@ -144,10 +146,7 @@ nav a:active, a:hover{
 .dropdown:hover .dropdown_content {
     display:block;
 }
-.dropdown_content:hover{
-    /*background-color: #dadada;
-    try to make each link a dropdown item class and add background color to that class*/
-}
+
 
 body {
     font-family: "HelveticaNeue", "Arial", sans-serif;
@@ -210,6 +209,8 @@ body {
 form{
     box-sizing: border-box;
 }
+
+
 button{
     border:none;
     border-radius: 5px;
