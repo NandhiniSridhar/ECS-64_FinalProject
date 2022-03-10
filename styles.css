@@ -21,6 +21,14 @@
     width:70%;
 }
 
+#chat{
+    width: 40%;
+}
+
+#response_text_reveal{
+    visibility: hidden;
+}
+
 a{
     text-decoration: none;
     color: black;

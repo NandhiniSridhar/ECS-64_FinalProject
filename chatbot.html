@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ClassMatch: Home</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="chat.js"></script>
+    </head>
+
+    <nav>
+        <a href = index.html id = "nav_icon"> <img src ="./assist_logo.png" width="142px" height="72px"> </a>
+        <ul id = "nav_menu">
+            <li><a href = login_page.html>Login</a></li>
+            
+        </ul>
+        <br/>
+    </nav>
+
+    <body>
+        <h1>chatbot</h1>
+        
+        <section id="chat">
+            <p class="response_text">Thanks for reaching out to Assist customer service! How can I help you?</p>
+            <input type="text" class="user_text"> <!-- how can i save and share my schedules-->
+            <button onclick="revealText()">hi</button> <!-- onclick should trigger next paragraph reveal-->
+            <p id="reveal" class="response_text">You can either sign up for an account or log in if you already have one. Once you're logged in, you can save various schedules and save them as PDFs for export.</p>
+        </section>
+</body>
+</html>
