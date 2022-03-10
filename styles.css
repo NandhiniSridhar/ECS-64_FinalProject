@@ -122,6 +122,22 @@ nav a:active, a:hover{
     color: #7BBBFF;
 }
 
+/*in logged in views/ my schedule, chat, etc - dropdown in nav*/
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+.dropdown_content{
+    display:none;
+    position:relative;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown_content {
+    display:block;
+}
+
 body {
     font-family: "HelveticaNeue", "Arial", sans-serif;
     padding: 0;
