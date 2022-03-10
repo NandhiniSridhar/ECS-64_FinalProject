@@ -1,3 +1,20 @@
+#chat{
+    width: 40%;
+}
+
+.response_text{
+    padding: 20px;
+    margin-right: 60%;
+    color: black;
+    background-color: rgb(247, 245, 245);
+}
+.user_text{
+    padding: 20px;
+    margin-left: 60%;
+    background-color: #7879f1;
+    color: white;
+}
+
 #chatbot{
     visibility: hidden;
     width:25%;
@@ -21,9 +38,6 @@
     width:70%;
 }
 
-#chat{
-    width: 40%;
-}
 
 #response_text_reveal{
     visibility: hidden;
